@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="A thrilling Halloween Showcase filled with spooky surprises and exciting events. Join us for a frightfully fun experience!">
+    <meta name="keywords"
+        content="Halloween, Showcase, event, spooky, fun, thrilling, ghosts, pumpkins, witches, bats, spiders, skeletons, black cats, vampires, zombies, werewolves">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/registration.css">
+    <link rel="stylesheet" href="assets/css/game.css">
+
+    <title>Halloween Challenge</title>
+
+</head>
+
+<body>
+
+    <h1>Overcome Evil</h1>
+    <p>Can you beat Evil in a game of ghouls?</p>
+    <p>Get 9 points for a nice surprise!</p>
+
+    <!-- Game area to hold the game sections -->
+    <div class="challenge-area">
+
+        <!-- Buttons to select player option for game -->
+        <div class="controls-area"><h3>Choose Your Ghoul</h3>
+            <div class="weapons">
+                
+                <div class="thirds">
+                    <button type="button" class="game-btn" id="ghost" aria-label="ghost-button">
+                        <img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="game-icon" alt="Ghost Icon">
+                    </button>
+                    <p>Ghost</p>
+                </div>
+                <div class="thirds">
+                    <button type="button" class="game-btn" id="pumpkin" aria-label="pumpkin-button">
+                        <img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="game-icon" alt="Pumpkin Icon">
+                    </button>
+                    <p>Pumpkin</p>
+                </div>
+                <div class="thirds">
+                    <button type="button" class="game-btn" id="death" aria-label="death-button">
+                        <img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="game-icon" alt="Death Icon">
+                    </button>
+                    <p>Death</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area to display player choice and random computer choice -->
+        <div class="choices-area">
+            <div class="halves">
+                <div class="choices" id="user-choice">
+                    <i class="icon fa-solid fa-question"></i>
+                </div>
+                <h4>You</h4>
+            </div>
+            <div class="halves">
+                <div class="choices" id="computer-choice">
+                    <i class="icon fa-solid fa-question"></i>
+                </div>
+                <h4>Evil</h4>
+            </div>
+        </div>
+        
+        <!-- Area to show who won the game and display points accumulated -->
+        <div class="game-state-area">
+            <div class="scores">
+                <div class="thirds">
+                    <div>
+                        <span class="points" id="user-score">0</span>
+                    </div>
+                    <p>Your Points</p>
+                </div>
+                <div class="thirds">
+                    <div id="win-state">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    <p>Result</p>
+                </div>
+                <div class="thirds">
+                    <div>
+                        <span class="points" id="computer-score">0</span>
+                    </div>
+                    <p>Evil's Points</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Area to hold buttons to reset the game and scores and show an alert informing user how to play the game -->
+        <div id="information">
+            <div>
+                <button type="button" class="button" id="alert" onclick="howToPlay()">Rules</button>
+            </div>
+            <div>
+                <button type="reset" class="button" id="reset">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- Font awesome javascript for icons -->
+    <script src="https://kit.fontawesome.com/0ac18b6588.js" crossorigin="anonymous"></script>
+    <!-- Site javscript -->
+    <script src="assets/js/game.js"></script>
+    <!-- Sweetalert2 javascript -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
