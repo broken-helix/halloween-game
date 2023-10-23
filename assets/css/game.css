@@ -1,13 +1,14 @@
 /* css file to control game layout */ 
 
 /* Google fonts script */
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&family=Poppins&display=swap');
 
 /* Default styles for the page, optimised for mobile first design */
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    background-color: #210B2C;
+    background-image: url("../images/backgrounds/_27e811c3-e7cd-42cd-8e70-bc04aa2526d9.jpg");
+    background-color: #0D160B;
     color: #D74E09;
     text-align: center;
 }
@@ -20,7 +21,7 @@ body {
 }
 
 h1 {
-    font-family: 'Nosifer', sans-serif;
+    font-family: 'Eater', sans-serif;
     font-size: 2.5rem;
     color: #D74E09;
     margin-left: 20%;
@@ -37,7 +38,7 @@ h3 {
 }
 
 .swal2-html-container, .swal2-title {
-    color: white;
+    color: #D9DCD6;
 }
 
 .swall-text{
@@ -46,7 +47,7 @@ h3 {
 
 /* Game area */
 .game-area {
-    background-color: #F7F7F2;
+    background-color: #D9DCD6;
     box-sizing: border-box;
     width: 85%;
     border-radius: 5%;
@@ -84,7 +85,7 @@ h3 {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #F7F7F2;
+    background-color: #D9DCD6;
     border: 0.313rem solid #7286A0;
     margin: 0 0.625rem;
 }
@@ -117,7 +118,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F7F7F2;
+    background-color: #D9DCD6;
+    border: 0.313rem solid #7286A0;
 }
 
 .choice-question {
@@ -131,7 +133,7 @@ h3 {
 
 .choices .fa-regular, .choices .fa-solid {
     font-size: 4.375rem;
-    color: #210B2C;
+    color: #0D160B;
 }
 
 /* Points tally and game results area */
@@ -163,32 +165,32 @@ h3 {
     align-items: center;
     font-size: 2.188rem;
     font-weight: 700;
-    background-color: #F7F7F2;
-    color: #210B2C;
+    background-color: #D9DCD6;
+    color: #0D160B;
 }
 
 .win {
     color: #6E0E0A;
-    border-color: #210B2C;
+    border-color: #0D160B;
     font-family: 'Nosifer', sans-serif;
 }
 
 .lose {
     color: #D74E09;
-    border-color: #210B2C;
+    border-color: #0D160B;
     font-family: 'Nosifer', sans-serif;
 }
 
 .draw {
-    color: #210B2C;
-    border-color: #210B2C;
+    color: #0D160B;
+    border-color: #0D160B;
     font-family: 'Nosifer', sans-serif;
 }
 
 .points {
     font-size: 4.375rem;
     font-family: 'Nosifer', sans-serif;
-    border: 0.313rem solid #210B2C;
+    border: 0.313rem solid #0D160B;
     margin: 0.313rem;
     display: flex;
     justify-content: center;
@@ -196,8 +198,8 @@ h3 {
     width:  4.375rem;
     height: 5rem;
     border-radius: 20%;
-    background-color: #F7F7F2;
-    color: #210B2C;
+    background-color: #D9DCD6;
+    color: #0D160B;
 }
 
 #information {
@@ -209,11 +211,11 @@ h3 {
 #alert, #reset {
     font-family: "Smooch Sans", sans-serif;
     font-weight: bold;
-    border: 0.125rem solid #210B2C;
+    border: 0.125rem solid #0D160B;
     border-radius: 5%;
     font-size: 1.25rem;
     padding: 0.313rem;
-    background-color: #F7F7F2;
+    background-color: #D9DCD6;
     color: #000;
     border-radius: 8%;
 }
@@ -226,8 +228,9 @@ h3 {
     margin: 0 0 1.25rem 1.25rem;
 }
 
+/*
 /* Media Queries for responsive layout */
-@media screen and (min-width: 500px) {
+/*@media screen and (min-width: 500px) {
     .game-btn {
         width: 6.25rem;
         height: 6.25rem;
@@ -273,9 +276,9 @@ h3 {
     .scores h3 {
         font-size: 1.25rem;
     }
-}
+}*/
 
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {*//*
     .game-btn {
         width: 7.5rem;
         height: 7.5rem;
@@ -339,9 +342,9 @@ h3 {
     .game-area {
         width: 45%;
     }
-}
+}*/
 
-/* Responsive design for narrow screen sizes */
+/* Responsive design for narrow screen sizes *//*
 @media screen and (max-width: 365px) {
     .game-btn {
         width: 3.75rem;
@@ -388,9 +391,9 @@ h3 {
     .scores h3 {
         font-size: 0.938rem;
     }  
-}
+}*/
 
-/* Responsive design for narrow screen sizes */
+/* Responsive design for narrow screen sizes *//*
 @media screen and (max-width: 300px) {
     .game-btn {
         width: 3.125rem;
@@ -443,9 +446,9 @@ h3 {
     .game-area {
         width: 95%;
     }
-}
+}*/
 
-/* iPad landscape styling */
+/* iPad landscape styling *//*
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .game-btn {
         width: 6.25rem;
@@ -482,4 +485,4 @@ h3 {
         border-width: 0.188rem;
         font-size: 1.563rem;
     }
-}
+}*/
