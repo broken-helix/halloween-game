@@ -11,6 +11,7 @@
         content="A thrilling Halloween Showcase filled with spooky surprises and exciting events. Join us for a frightfully fun experience!">
     <meta name="keywords"
         content="Halloween, Showcase, event, spooky, fun, thrilling, ghosts, pumpkins, witches, bats, spiders, skeletons, black cats, vampires, zombies, werewolves">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/3792006_grim_death_halloween_reaper.svg">
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="assets/css/game.css">
 
@@ -20,36 +21,57 @@
 
 <body>
 
-    <h1>Overcome Evil</h1>
-    <p>Can you beat Evil in a game of ghouls?</p>
-    <p>Get 9 points for a nice surprise!</p>
+    <div class ="title-area">
+        <div class="titles">
+            <div class="ghost-title">
+                <h1>Ghost</h1>
+            </div>
+        </div>
+        <div class="titles">
+            <div class="pumpkin-title">
+                <h1>Pumpkin</h1>
+            </div>
+        </div>
+        <div class="titles">
+            <div class="death-title">
+                <h1>Death</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="prompt-area">
+        <h3 class="choose-text">Choose Your Ghoul</h3>
+    </div>
 
     <!-- Game area to hold the game sections -->
     <div class="challenge-area">
 
         <!-- Buttons to select player option for game -->
-        <div class="controls-area"><h3>Choose Your Ghoul</h3>
+        <div class="controls-area">
+
             <div class="weapons">
                 
                 <div class="thirds">
                     <button type="button" class="game-btn" id="ghost" aria-label="ghost-button">
-                        <img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="game-icon" alt="Ghost Icon">
+                        <img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="game-icon" alt="Ghost Icon" title="Ghost">
                     </button>
-                    <p>Ghost</p>
+                    
                 </div>
                 <div class="thirds">
                     <button type="button" class="game-btn" id="pumpkin" aria-label="pumpkin-button">
-                        <img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="game-icon" alt="Pumpkin Icon">
+                        <img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="game-icon" alt="Pumpkin Icon" title="Pumpkin">
                     </button>
-                    <p>Pumpkin</p>
+                    
                 </div>
                 <div class="thirds">
                     <button type="button" class="game-btn" id="death" aria-label="death-button">
-                        <img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="game-icon" alt="Death Icon">
+                        <img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="game-icon" alt="Death Icon"  title="Death">
                     </button>
-                    <p>Death</p>
+                    
                 </div>
+
             </div>
+
         </div>
 
         <!-- Area to display player choice and random computer choice -->

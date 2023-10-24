@@ -9,6 +9,10 @@ body {
     font-weight: 500;
     background-image: url("../images/backgrounds/_27e811c3-e7cd-42cd-8e70-bc04aa2526d9.jpg");
     background-color: #0D160B;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #D74E09;
     text-align: center;
 }
@@ -23,9 +27,30 @@ body {
 h1 {
     font-family: 'Eater', sans-serif;
     font-size: 2.5rem;
-    color: #D74E09;
+    color: #A40606;
     margin-left: 20%;
     margin-right: 20%;
+    text-shadow: -1px 1px rgb(217, 220, 214, 0.8);
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles {
+    display: flex;
+}
+
+.ghost-title,
+.pumpkin-title,
+.death-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -30px;
 }
 
 h2 {
@@ -34,7 +59,22 @@ h2 {
 }
 
 h3 {
-    font-size: 1.563rem;
+    font-size: 1.25rem;
+}
+
+h4 {
+    text-shadow: 0 0 10px rgb(13, 22, 11, 0.8);
+}
+
+p {
+    text-shadow: 0 0 10px #0D160B;
+}
+
+.choose-text {
+    font-family: 'Nosifer', sans-serif;
+    color: rgb(164,6,6, 0.8);
+    text-shadow: -1px 1px rgb(217, 220, 214, 0.8);
+    margin-top: 40px;
 }
 
 .swal2-html-container, .swal2-title {
@@ -69,6 +109,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .controls-area .fa-regular {
@@ -77,28 +118,29 @@ h3 {
 
 .weapons {
     display: flex;
-    margin: 0.625rem 0 1.25rem 0;
 }
 
 .game-btn {
     color: #210B2C;
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;
-    background-color: #D9DCD6;
-    border: 0.313rem solid #7286A0;
+    border-radius: 20%;
+    background-color: rgba(217, 220, 214, 0.5);
+    border: 0.313rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0 0 15px #D9DCD6;
     margin: 0 0.625rem;
 }
 
 .game-icon {
-    width: 80%;
+    width: 90%;
 }
 
 /* Game selection display area */
 .choices-area {
     display: flex;
     justify-content: center;
-    margin: 0 0 1.25rem 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .halves {
@@ -113,13 +155,15 @@ h3 {
 .choices {
     width: 7.5rem;
     height: 7.5rem;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D9DCD6;
-    border: 0.313rem solid #7286A0;
+    color: rgba(13, 22, 11, 0.8);
+    background-color: rgba(217, 220, 214, 0.5);
+    border: 0.313rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0px 0px 15px #D9DCD6;
 }
 
 .choice-question {
@@ -128,12 +172,12 @@ h3 {
 }
 
 .active {
-    border: 1px solid #D74E09;
+    border: 0.313rem solid #6D6466;
 }
 
 .choices .fa-regular, .choices .fa-solid {
     font-size: 4.375rem;
-    color: #0D160B;
+    color: rgba(13, 22, 11, 0.8);
 }
 
 /* Points tally and game results area */
@@ -154,68 +198,77 @@ h3 {
     align-items: flex-start;
 }
 
+.fa-question {
+    color: rgba(13, 22, 11, 0.8);
+}
+
 #win-state {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    border: 0.313rem solid #210B2C;
+    width: 8rem;
+    height: 4.375rem;
+    border-radius: 20%;
     margin: 0.313rem 2.5rem;
+    border: 0.313rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0px 0px 25px #D9DCD6;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.188rem;
+    font-size: 1.5625rem;
     font-weight: 700;
-    background-color: #D9DCD6;
-    color: #0D160B;
+    background-color: rgba(217, 220, 214, 0.5);
 }
 
 .win {
-    color: #6E0E0A;
-    border-color: #0D160B;
+    border-color: #FF7F11;
     font-family: 'Nosifer', sans-serif;
+    color: #FF7F11;
+    text-shadow: -1px 1px rgba(13, 22, 11, 0.8);
 }
 
 .lose {
-    color: #D74E09;
-    border-color: #0D160B;
+    border-color: #A40606;
     font-family: 'Nosifer', sans-serif;
+    color: #A40606;
+    text-shadow: -1px 1px rgba(13, 22, 11, 0.8);
 }
 
 .draw {
-    color: #0D160B;
-    border-color: #0D160B;
+    border-color: #6D6466;
     font-family: 'Nosifer', sans-serif;
+    color: #0D160B;
+    text-shadow: -1px 1px rgb(164,6,6, 0.8);
 }
 
 .points {
-    font-size: 4.375rem;
+    font-size: 3.125rem;
     font-family: 'Nosifer', sans-serif;
-    border: 0.313rem solid #0D160B;
+    border: 0.313rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0px 0px 25px #D9DCD6;
     margin: 0.313rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width:  4.375rem;
-    height: 5rem;
+    height: 4.375rem;
     border-radius: 20%;
-    background-color: #D9DCD6;
-    color: #0D160B;
+    background-color: rgba(217, 220, 214, 0.5);
 }
 
 #information {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 #alert, #reset {
     font-family: "Smooch Sans", sans-serif;
     font-weight: bold;
-    border: 0.125rem solid #0D160B;
+    border: 0.125rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0px 0px 25px #D9DCD6;
     border-radius: 5%;
     font-size: 1.25rem;
     padding: 0.313rem;
-    background-color: #D9DCD6;
+    background-color: rgba(217, 220, 214, 0.5);
     color: #000;
     border-radius: 8%;
 }
