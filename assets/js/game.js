@@ -161,20 +161,13 @@ function incrementScores() {
     }
 }
 
-const sweetAlertTextEndGameWon = "You Won!&#10;Here is your discount code: XXX";
-
 function endGameWin() {
     Swal.fire({
         titleText:  "You Won!",
-        html:       "Here is your discount code:<br /><h3>XXX</h3>",
+        html:       "You Beat Evil!!!<br /><h3>But can you do it again?</h3>",
         confirmButtonColor: "#6E0E0A",
-        confirmButtonText: "Use It Here",
+        confirmButtonText: "Play Again",
         background: '#D74E09',
-    })
-    .then(function (result) {
-        if (result.value) {
-            window.location = "registration.html";
-        }
     });
     // Reset the game state
     document.getElementById("user-score").innerText = "0";
@@ -190,15 +183,15 @@ function endGameWin() {
     canPlay = true; // Reset canPlay to allow the player to start a new game
 }
 
-const sweetAlertTextEndGameLost = "You Lost. Would you like to play again?";
+const sweetAlertTextEndGameLost = "You Lost. Evil won. Would you like to try again?";
 
 function endGameLose() {
     Swal.fire({
         titleText:  "You Lost!",
         text:       sweetAlertTextEndGameLost,
-        confirmButtonColor: "#D74E09",
-        confirmButtonText: "Play Again",
-        background: '#6E0E0A',
+        confirmButtonColor: "#6E0E0A",
+        confirmButtonText: "Try Again",
+        background: '#D74E09',
     });
     // Reset the game state
     document.getElementById("user-score").innerText = "0";

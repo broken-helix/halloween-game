@@ -77,24 +77,6 @@ p {
     margin-top: 40px;
 }
 
-.swal2-html-container, .swal2-title {
-    color: #D9DCD6;
-}
-
-.swall-text{
-    color: red;
- }
-
-/* Game area */
-.game-area {
-    background-color: #D9DCD6;
-    box-sizing: border-box;
-    width: 85%;
-    border-radius: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Flexbox styling for Controls and Game-State areas */
 .thirds {
     width: 33%;
@@ -281,261 +263,117 @@ p {
     margin: 0 0 1.25rem 1.25rem;
 }
 
-/*
+/* Sweetalert2 Styles */
+.swal2-html-container, .swal2-title {
+    color: #D9DCD6;
+}
+
+.swall-text{
+    color: red;
+ }
+
 /* Media Queries for responsive layout */
-/*@media screen and (min-width: 500px) {
-    .game-btn {
-        width: 6.25rem;
-        height: 6.25rem;
-        border-width: 0.375rem;
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 60%;
     }
-    .controls-area .fa-regular {
-        font-size: 3.125rem;
+    h1 {      
+        font-size: 1.625rem;
+    }
+    .ghost-title,
+    .pumpkin-title,
+    .death-title {
+        margin-bottom: -15px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .choose-text {
+        margin-top: 30px;
+    }
+    .game-btn {
+        width: 4.0625rem;
+        height: 4.0625rem;
+        border: 0.25rem solid rgba(13, 22, 11, 0.8);
     }
     .choices {
-        width: 9.375rem;
-        height: 9.375rem;
-        border-width: 0.5rem;
-    }
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 5.625rem;
-    }
-    .points {
-        font-size: 5rem;
-        border-width: 0.375rem;
-        margin: 0.313rem;
         width: 5rem;
-        height: 5.625rem;
+        height: 5rem;
+        border: 0.25rem solid rgba(13, 22, 11, 0.8);
+    }
+    .choices-area {
+        margin-top: 15px;
+        margin-bottom: 0;
     }
     #win-state {
-        width: 5.625rem;
-        height: 5.625rem;
-        border-width: 0.375rem;
+        width: 4.6875rem;
+        height: 4.375rem;
+        border-radius: 20%;
         margin: 0.313rem 2.5rem;
-        font-size: 2.188rem;
-    }
-    h1 {
-        font-size: 3.75rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 1.875rem;
-    }
-    .halves h3 {
-        font-size: 1.563rem;
-    }
-    .scores h3 {
-        font-size: 1.25rem;
-    }
-}*/
-
-/*@media screen and (min-width: 600px) {*//*
-    .game-btn {
-        width: 7.5rem;
-        height: 7.5rem;
-        border-width: 0.5rem;
-    }
-    .controls-area .fa-regular {
-        font-size: 3.75rem;
-    }
-    .choices {
-        width: 11.25rem;
-        height: 11.25rem;
-        border-width: 0.625rem;
-    }
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 6.875rem;
-    }
-    .points {
-        font-size: 5.625rem;
-        border-width: 0.5rem;
-        margin: 0.313rem;
-        width: 8.125rem;
-        height: 7.813rem;
-    }
-    #win-state {
-        width: 11.25rem;
-        height: 7.813rem;
-        border-width: 0.5rem;
-        margin: 0.313rem 3.125rem;
-        font-size: 2.5rem;
-    }
-    h1 {
-        font-size: 4.375rem;
-    }
-    h2 {
-        font-size: 3.125rem;
-    }
-    h3 {
-        font-size: 2.188rem;
-    }
-    .halves h3 {
-        font-size: 1.875rem;
-    }
-    .scores h3 {
-        font-size: 1.375rem;
+        border: 0.313rem solid rgba(13, 22, 11, 0.8);
+        box-shadow: 0px 0px 25px #D9DCD6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9375rem;
+        font-weight: 700;
+        background-color: rgba(217, 220, 214, 0.5);
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .game-area {
-        width: 65%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .game-area {
-        width: 55%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .game-area {
-        width: 45%;
-    }
-}*/
-
-/* Responsive design for narrow screen sizes *//*
-@media screen and (max-width: 365px) {
-    .game-btn {
-        width: 3.75rem;
-        height: 3.75rem;
-        border-width: 0.188rem;
-    }
-    .controls-area .fa-regular {
-        font-size: 1.875rem;
-    }
-    .choices {
-        width: 4.688rem;
-        height: 4.688rem;
-        border-width: 0.188rem;
-        margin: 0.313rem 0.625rem;
-    }
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 2.5rem;
-    }
-    .points {
-        font-size: 3.125rem;
-        border-width: 0.188rem;
-        width: 3.125rem;
-        height: 3.75rem;
+@media screen and (max-width: 330px) {
+    h1 {      
+        font-size: 1.5625rem;
     }
     #win-state {
         width: 3.75rem;
         height: 3.75rem;
-        border-width: 0.188rem;
-        margin: 0.313rem 1.25rem;
-        font-size: 1.563rem;
-    }
-    h1 {
-        font-size: 1.875rem;
-    }
-    h2 {
-        font-size: 1.563rem;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-    .halves h3 {
-        font-size: 0.938rem;
-    }
-    .scores h3 {
-        font-size: 0.938rem;
-    }  
-}*/
-
-/* Responsive design for narrow screen sizes *//*
-@media screen and (max-width: 300px) {
-    .game-btn {
-        width: 3.125rem;
-        height: 3.125rem;
-        border-width: 0.125rem;
-        margin: 0.188rem;
-    }
-    .controls-area .fa-regular {
-        font-size: 1.563rem;
-    }
-    .choices {
-        width: 4.063rem;
-        height: 4.063rem;
-        border-width: 0.125rem;
-        margin: 0 0.625rem;
-    }
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 1.875rem;
-    }
-    .points {
-        font-size: 2.188rem;
-        border-width: 0.125rem;
-        width: 2.188rem;
-        height: 2.813rem;
-    }
-    #win-state {
-        width: 2.183rem;
-        height: 2.183rem;
-        border-width: 0.125rem;
-        font-size: 1.25rem;
-    }
-    h1 {
-        font-size: 1.562rem;
-    }
-    h2 {
-        font-size: 1.25rem;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-    .halves h3 {
-        font-size: 0.938rem;
-    }
-    .scores h3 {
+        border-radius: 20%;
+        margin: 0.313rem 2.5rem;
+        border: 0.313rem solid rgba(13, 22, 11, 0.8);
+        box-shadow: 0px 0px 25px #D9DCD6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 0.625rem;
-    }  
-}
-
-@media screen and (max-width: 210px) {
-    .game-area {
-        width: 95%;
-    }
-}*/
-
-/* iPad landscape styling *//*
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .game-btn {
-        width: 6.25rem;
-        height: 6.25rem;
-        border-radius: 50%;
-        background-color: #F7F7F2;
-        border-width: 0.313rem;
-        margin: 0 0.625rem;
-    }
-    .controls-area .fa-regular {
-        font-size: 3.75rem;
-    }
-    .weapons {
-        margin: 3.313rem 0 0.625rem 0;
-    }
-    .choices {
-        width: 9.375rem;
-        height: 9.375rem;
-        border-radius: 50%;
-        border-width: 0.438rem;
-        border-color: #210B2C;
-    }
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 5.625rem;
+        font-weight: 700;
+        background-color: rgba(217, 220, 214, 0.5);
     }
     .points {
         font-size: 3.125rem;
-        border-width: 0.188rem;
-        width: 3.125rem;
+        font-family: 'Nosifer', sans-serif;
+        border: 0.313rem solid rgba(13, 22, 11, 0.8);
+        box-shadow: 0px 0px 25px #D9DCD6;
+        margin: 0.313rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:  3.75rem;
         height: 3.75rem;
+        border-radius: 20%;
+        background-color: rgba(217, 220, 214, 0.5);
     }
-    #win-state {
-        height: 3.75rem;
-        border-width: 0.188rem;
-        font-size: 1.563rem;
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 120%;
     }
-}*/
+}
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 130%;
+    }
+    h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .title-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
