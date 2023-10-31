@@ -113,17 +113,16 @@ Colors were selected using the coolors color palette generator.  <br><br>
 
 #### *Game Area:*
 
-* The game area holds all the elements required to play the game and display the outcome and points.  The site was styled to fit onto a mobile screen and then enlarged or reduced for other sizes as approptiate.
+* The game area holds all the elements required to play the game and display the outcome and points.  The site was styled to fit onto a mobile screen and then enlarged or reduced for other sizes as appropriate.
 
-![Game Area](/docs/desktop-view.jpg)
+![Game Area](/docs/challenge-area.jpg)
 
 #### *Images:*
 
-* To illustrate the available options and choices, the following icons from FontAwesome are employed within the borders of buttons and other elements on the page.
-* [Question Mark](https://fontawesome.com/icons/question?s=solid&f=classic)
-* [Rock Symbol](https://fontawesome.com/icons/hand-back-fist?s=regular&f=classic)
-* [Paper Symbol](https://fontawesome.com/icons/hand?s=regular&f=classic)
-* [Scissors Symbol](https://fontawesome.com/icons/hand-scissors?s=regular&f=classic)
+* In the earlier Rock, Paper, Scissors iteration, icons from FontAwesome were employed within the borders of buttons and other elements on the page.  However, with limited Halloween options available in the free plan, only the [Question Mark](https://fontawesome.com/icons/question?s=solid&f=classic) icon was used for this project, with other images being used from Icojam on [Iconfinder](https://www.iconfinder.com/iconsets/materia-halloween-free).
+* The background image was AI generated with Bing Chat, in creative mode.
+
+![Background Image](/assets/images/backgrounds/background1.jpg)
 
 #### *Controls Area:*
 
