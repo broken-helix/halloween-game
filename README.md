@@ -1,3 +1,5 @@
+![Responsive Screenshot](/docs/responsive.jpg)
+
 # **Ghost, Pumpkin, Death**
 ## **Site Overview**
 
@@ -10,8 +12,6 @@ The first to reach 9 points wins the game.
 Alert boxes provide users with a guide on how to play the game and communicate whether they won or lost at the end of the game.
 
 [View the live project here](https://broken-helix.github.io/halloween-game/).
-
-![Responsive Screenshot](/docs/responsive.jpg)
 ***
 
 ## Table of contents:
