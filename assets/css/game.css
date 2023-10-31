@@ -13,7 +13,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #D74E09;
+    color: #FF7F11;
     text-align: center;
 }
 
@@ -30,7 +30,7 @@ h1 {
     color: #A40606;
     margin-left: 20%;
     margin-right: 20%;
-    text-shadow: -1px 1px rgb(217, 220, 214, 0.8);
+    text-shadow: -1px 1px rgba(217, 220, 214, 0.8);
 }
 
 .title-area {
@@ -63,7 +63,7 @@ h3 {
 }
 
 h4 {
-    text-shadow: 0 0 10px rgb(13, 22, 11, 0.8);
+    text-shadow: 0 0 10px rgba(13, 22, 11, 0.8);
 }
 
 p {
@@ -72,8 +72,8 @@ p {
 
 .choose-text {
     font-family: 'Nosifer', sans-serif;
-    color: rgb(215, 78, 9, 0.8);
-    text-shadow: -1px 1px rgb(217, 220, 214, 0.8);
+    color: #FF7F11;
+    text-shadow: -1px 1px rgba(13, 22, 11, 0.8);
     margin-top: 40px;
 }
 
@@ -197,6 +197,24 @@ p {
     font-size: 1.5625rem;
     font-weight: 700;
     background-color: rgba(217, 220, 214, 0.5);
+    font-family: 'Nosifer', sans-serif;
+}
+
+.points {
+    font-size: 3.125rem;
+    font-family: 'Nosifer', sans-serif;
+    border: 0.313rem solid rgba(13, 22, 11, 0.8);
+    box-shadow: 0px 0px 25px #D9DCD6;
+    margin: 0.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  4.375rem;
+    height: 4.375rem;
+    border-radius: 20%;
+    background-color: rgba(217, 220, 214, 0.5);
+    color: #0D160B;
+    text-shadow: -1px 1px rgb(164,6,6, 0.8);
 }
 
 .win {
@@ -214,25 +232,10 @@ p {
 }
 
 .draw {
-    border-color: #6D6466;
+    border-color: #0D160B;
     font-family: 'Nosifer', sans-serif;
     color: #0D160B;
     text-shadow: -1px 1px rgb(164,6,6, 0.8);
-}
-
-.points {
-    font-size: 3.125rem;
-    font-family: 'Nosifer', sans-serif;
-    border: 0.313rem solid rgba(13, 22, 11, 0.8);
-    box-shadow: 0px 0px 25px #D9DCD6;
-    margin: 0.313rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:  4.375rem;
-    height: 4.375rem;
-    border-radius: 20%;
-    background-color: rgba(217, 220, 214, 0.5);
 }
 
 #information {
@@ -309,16 +312,7 @@ p {
     #win-state {
         width: 4.6875rem;
         height: 4.375rem;
-        border-radius: 20%;
-        margin: 0.313rem 2.5rem;
-        border: 0.313rem solid rgba(13, 22, 11, 0.8);
-        box-shadow: 0px 0px 25px #D9DCD6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 0.9375rem;
-        font-weight: 700;
-        background-color: rgba(217, 220, 214, 0.5);
     }
 }
 
@@ -329,30 +323,12 @@ p {
     #win-state {
         width: 3.75rem;
         height: 3.75rem;
-        border-radius: 20%;
-        margin: 0.313rem 2.5rem;
-        border: 0.313rem solid rgba(13, 22, 11, 0.8);
-        box-shadow: 0px 0px 25px #D9DCD6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 0.625rem;
-        font-weight: 700;
-        background-color: rgba(217, 220, 214, 0.5);
     }
     .points {
         font-size: 3.125rem;
-        font-family: 'Nosifer', sans-serif;
-        border: 0.313rem solid rgba(13, 22, 11, 0.8);
-        box-shadow: 0px 0px 25px #D9DCD6;
-        margin: 0.313rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width:  3.75rem;
         height: 3.75rem;
-        border-radius: 20%;
-        background-color: rgba(217, 220, 214, 0.5);
     }
 }
 
@@ -371,9 +347,7 @@ p {
         margin-right: 10px;
     }
     .title-area {
-        display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
     }
 }

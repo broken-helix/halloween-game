@@ -86,15 +86,19 @@ As the site involved customisation of a previous design, no wireframes were crea
 The color scheme was designed to incorporate orange and red, to indicate win and loss results, along with complementary colors.
 Colors were selected using the coolors color palette generator.  <br><br>
 
-![Coolors Palette](/docs/rock-paper-scissors-screenshot.jpg)
+![Coolors Palette](/docs/halloween-game-palette.jpg)
 ***
 
 ## **Typography**
 
-* The font used throughout the game was selected from Google Fonts.
-* A retro style computer font was desired, but most options seemed quite pixelated, so [Smooch sans](https://fonts.google.com/specimen/Smooch+Sans) was selected for its more modern and smoother representation.
+* The fonts used throughout the game were selected from Google Fonts.
+* THe Halloween theme dictated the font selection for the major parts, with a font called '[Eater](https://fonts.google.com/specimen/Eater)' used for the title and '[Nosifer](https://fonts.google.com/specimen/Nosifer)' for most of the rest of the text.
+* These fonts were styled to have a drop shadow, to help distiguish them from the dark background and maintain the moody visual appearance.
+* To retain some clarity, a simple font, [Poppins](https://fonts.google.com/specimen/Poppins) was used for informational text, such as labels for areas or button text.
 
-![Font selection](/docs/smooch-sans-font.jpg)
+![Eater Font](/docs/eater-font.jpg)
+![Nosifer Font](/docs/nosifer-font.jpg)
+![Poppins Font](/docs/poppins-font.jpg)
 ***
 
 ## **Current Features**
@@ -105,9 +109,11 @@ Colors were selected using the coolors color palette generator.  <br><br>
 
 ![Page Title](/docs/title.jpg)
 
+![Page Title Responsive](/docs/title-condensed.jpg)
+
 #### *Game Area:*
 
-* The game area holds all the elements required to play the game and display the outcome and points.  It narrows as the screen sizes increase, to avoid filling the screen with large areas to the left and right hand sides, with no content.
+* The game area holds all the elements required to play the game and display the outcome and points.  The site was styled to fit onto a mobile screen and then enlarged or reduced for other sizes as approptiate.
 
 ![Game Area](/docs/desktop-view.jpg)
 
