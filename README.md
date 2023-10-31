@@ -189,7 +189,6 @@ Colors were selected using the coolors color palette generator.  <br><br>
 
 ## **Future-Enhancements**
 
-* Allow the user to select a set number of games, as a 'best of x turns' game.
 * Make the game appear fairer to the user by limiting the number of excess computer wins or weighting selections based on previous selections.
 * Make player and computer choice elements spin around Y-axis before displaying the result.
 * Make game playable for two human players.
