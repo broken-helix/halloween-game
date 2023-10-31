@@ -3,9 +3,11 @@
 # **Ghost, Pumpkin, Death**
 ## **Site Overview**
 
-Ghost, Pumpkin, Death is an interactive site, containing a Halloween version of the classic 'Rock, Paper, Scissors' game.
+Ghost, Pumpkin, Death is an interactive site, containing a Halloween version of the classic 'Rock, Paper, Scissors' game. 
 The game is immediately built upon an earlier (non-Halloween) version, built for an assessed project submission.
 The game is designed to be played by a single player, with the computer playing the opponent, Evil.
+In this version, the Pumpkin scares away the ghost, who beats death because the ghost is already dead and death chops the pumkin up with the scythe. 
+Pumkin > Ghost > Death > Pumpkin. 
 Once the player selects an option, the computer selects a random choice and the selections are compared to see who won.
 The site increments the scores of player and computer and uses a colour system to highlight the winner and loser.
 The first to reach 9 points wins the game.
